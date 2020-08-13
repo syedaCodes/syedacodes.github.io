@@ -170,3 +170,16 @@ main{
     vertical-align: -2.6rem;
     fill:  var(--color-black);
 }
+
+/* media queries*/
+@media only screen and (max-width: 37.5em){
+    html{
+        font-size: 50%;
+    }
+    .intro, .tech, .about, .contact{
+        width: 90%;
+    }
+    .contact{
+        line-height: 1.5;
+    }
+}
