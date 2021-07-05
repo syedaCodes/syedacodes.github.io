@@ -1,1 +1,1 @@
-# neha.codes https://syedacodes.github.io/neha.codes/
+# neha.codes https://syedacodes.github.io/nehacodes/
