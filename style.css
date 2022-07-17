@@ -302,6 +302,6 @@ p.contact__me a{
 }
 @media only screen and (max-width: 56.25em) {
     .intro, .menu, .tech, .about, .contact{
-        width: 100%;
+        width: 90%;
     }
 }
