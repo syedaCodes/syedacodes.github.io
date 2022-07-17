@@ -300,7 +300,7 @@ p.contact__me a{
         line-height: 1.5;
     }
     .project{
-        width: 30rem;
+        width: 40rem;
     }
 }
 @media only screen and (max-width: 56.25em) {
@@ -308,6 +308,6 @@ p.contact__me a{
         width: 90%;
     }
     .project{
-        width: 30rem;
+        width: 40rem;
     }
 }
