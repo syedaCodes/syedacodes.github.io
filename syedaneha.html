@@ -25,40 +25,34 @@
             <input type="checkbox" class="toggle__checkbox"/>
             <div class="toggle__button"></div>
         </label>
-        <!-- TO DO -->
-        <!-- Add a logo
-        Add a dark/light mode toggle
-
-        keep a background for svgs of vibgyor -->
     </header>
     <main>
-        <!-- Add a sidebar with just icons to slide through the 100vh frame -->
         <aside>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li title="About">
-                        <a href="">
+                        <a href="#about">
                             <svg>
                                 <use xlink:href="assets/sprite.svg#about"></use>
                             </svg>
                         </a>
                     </li>
-                    <li title="Projects">
+                    <!-- <li title="Projects">
                         <a href="">
                             <svg>
                                 <use xlink:href="assets/sprite.svg#projects"></use>
                             </svg>
                         </a>
-                    </li>
+                    </li> -->
                     <li title="Skills">
-                        <a href="">
+                        <a href="#skills">
                             <svg>
                                 <use xlink:href="assets/sprite.svg#skills"></use>
                             </svg>
                         </a>
                     </li>
                     <li title="Contact">
-                        <a href="">
+                        <a href="#contact">
                             <svg>
                                 <use xlink:href="assets/sprite.svg#phone"></use>
                             </svg>
@@ -67,9 +61,60 @@
                 </ul>
             </nav>
         </aside>
+        <div class="container" id="container">
+            <section class="hero" id="about">
+                <div class="hero__main section-default">
+                    <h1>Hi, I'm Neha</h1>
+                    <p>I am Syeda Neha, a Computer Science engineer and a self-taught Frontend Developer based in Hyderabad, India.</p>
+                    <p>I am exceptionally curious, hardworking, and I constantly seek opportunities to expand my knowledge and grow both personally and professionally.</p>
+                    <p>I have acquired valuable experience working with diverse organizations which has further fueled my passion for technology and reinforced my commitment to continuous improvement.</p>
+                    <p>As someone who thrives on challenges and embraces a proactive approach, I am eager to explore new technologies and industry trends.</p>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="skills__main section-default">
+                    <h2>Skills</h2>
+                    <p>I possess hands-on experience and proficiency in the following tools and technologies</p>
+                    <div class="skills__main--div">
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-html5"><title>HTML 5</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-css3"><title>CSS 3</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-sass"><title>Sass</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-bootstrap"><title>Bootstrap</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-javascript"><title>JavaScript</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-react"><title>React</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-jest"><title>Jest</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-git"><title>Git</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-npm"><title>npm</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-webpack"><title>Webpack</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-babel"><title>Babel</title></use></svg>
+                        <svg class="brand"><use xlink:href="assets/sprite.svg#icon-wordpress"><title>Wordpress</title></use></svg>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="contact__main section-default">
+                    <h2>Connect or Collaborate?</h2>
+                    <div class="social">
+                        <a class="icon" href="https://codepen.io/syeda_neha">
+                            <svg><use xlink:href="assets/sprite.svg#icon-codepen"></use></svg>
+                        </a>
+                        <a class="icon" href="https://github.com/syedaCodes">
+                            <svg><use xlink:href="assets/sprite.svg#icon-github"></use></svg>
+                        </a>
+                        <a class="icon" href="https://in.linkedin.com/in/syeda-neha-7b8b4881">
+                            <svg><use xlink:href="assets/sprite.svg#icon-linkedin2"></use></svg>
+                        </a>
+                        <a class="icon" href="https://www.youtube.com/channel/UCCnJWJYiVJR0RfhS30v2vVw">
+                            <svg><use xlink:href="assets/sprite.svg#icon-youtube"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-        <small class="copyright">Made with ❤️ &copy Copyright 2023</small>
+        <small class="copyright">Made with &#x1F9E0; + ❤️ &copy Copyright 2023</small>
     </footer>
+    <!-- <script src="script-one.js"></script> -->
 </body>
 </html>
