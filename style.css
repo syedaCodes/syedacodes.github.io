@@ -9,7 +9,7 @@
 [data-theme="dark"]{
     --color-light-primary: #282828;
     --color-dark-primary: #ffffff;
-    --color-font: #ffffff;
+    --color-font: #f5f5f5;
     --color-light-secondary: rgba(84, 84, 84, 0.3);
     --color-light-tertiary: rgba(100, 100, 100, 0.3);
 }
@@ -105,7 +105,7 @@ main section{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 8rem 4rem;
+    padding: 9rem 4rem;
     background-color: var(--color-light-primary);
 }
 main section h2{
