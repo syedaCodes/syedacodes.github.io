@@ -1,6 +1,7 @@
 :root{
     --color-light-primary: #ffffff;
     --color-light-secondary: #e8f0fa; /* box shadow */
+    --color-light-tertiary: #ececec;
     --color-dark-primary: #282828;
     --color-font: #333333;
     --border-color: #d9d9d9;
@@ -10,6 +11,7 @@
     --color-dark-primary: #ffffff;
     --color-font: #ffffff;
     --color-light-secondary: rgba(84, 84, 84, 0.3);
+    --color-light-tertiary: rgba(100, 100, 100, 0.3);
 }
 *,
 *::after,
@@ -58,7 +60,7 @@ h1, h2, h3, h4, h5, h6{
     height: 3.4rem;
     border-radius: 5rem;
     position: relative;
-    background-color: var(--color-light-secondary);
+    background-color: var(--color-light-tertiary);
     cursor: pointer;
 }
 .toggle .toggle__checkbox{
@@ -140,7 +142,7 @@ li:nth-child(4) a svg{
     fill: #2b1de8;
 }
 li.active a svg {
-    fill: var(--color-light-secondary);
+    fill: var(--color-light-tertiary);
 }
 main section div.section-default{
     padding: 2rem;
