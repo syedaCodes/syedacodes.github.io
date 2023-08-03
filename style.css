@@ -182,6 +182,20 @@ main section div h2{
     font-size: 3rem;
     margin-bottom: 2.5rem;
 }
+.btn{
+    border: none;
+    padding: 2rem 4rem;
+    border-radius: .2rem;
+    margin: 3rem 0;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.btn span{
+    margin-left: .7rem;
+}
 .skills__main--div{
     padding: 1rem 0;
 }
@@ -192,9 +206,6 @@ main section div h2{
     box-shadow: 0px 0px 7px var(--color-shadows);
     border: 1px solid var(--color-shadows);
     cursor: pointer;
-}
-.contact .contact__main p{
-    margin-bottom: 2rem;
 }
 .contact .contact__main .social{
     display: flex;
