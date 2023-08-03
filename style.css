@@ -104,8 +104,7 @@ main section{
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 9rem 4rem;
+    align-items: center;
     background-color: var(--color-light-primary);
 }
 main section h2{
@@ -145,9 +144,7 @@ li.active a svg {
     fill: var(--color-light-tertiary);
 }
 main section div.section-default{
-    padding: 2rem;
     width: 80%;
-    height: 100%;
 }
 main section.hero .hero__main,
 main section.skills .skills__main,
@@ -202,6 +199,6 @@ footer{
 
 @media only screen and (max-width: 900px){
     html{
-        font-size: 50%;
+        font-size: 52.25%;
     }
 }
