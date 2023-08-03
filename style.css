@@ -238,4 +238,7 @@ footer{
     html{
         font-size: 52.25%;
     }
+    main section{
+        max-height: 100vh;
+    }
 }
