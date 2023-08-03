@@ -1,17 +1,17 @@
 :root{
-    --color-light-primary: #ffffff;
-    --color-light-secondary: #e8f0fa; /* box shadow */
-    --color-light-tertiary: #ececec;
-    --color-dark-primary: #282828;
+    --color-primary: #ffffff;
+    --color-secondary: #282828;
+    --color-shadows: #e8f0fa; /* box shadow */
+    --color-inactive: #ececec;
     --color-font: #333333;
     --border-color: #d9d9d9;
 }
 [data-theme="dark"]{
-    --color-light-primary: #282828;
-    --color-dark-primary: #ffffff;
+    --color-primary: #282828;
+    --color-secondary: #ffffff;
     --color-font: #f5f5f5;
-    --color-light-secondary: rgba(84, 84, 84, 0.3);
-    --color-light-tertiary: rgba(100, 100, 100, 0.3);
+    --color-shadows: rgba(84, 84, 84, 0.3);
+    --color-inactive: rgba(100, 100, 100, 0.3);
 }
 *,
 *::after,
@@ -31,13 +31,14 @@ body{
     max-width: 100vw;
     height: 100vh;
     position: relative;
+    background-color: var(--color-primary);
 }
 header{
     max-width: 100vw;
     width: 100%;
-    background-color: var(--color-light-primary);
+    background-color: var(--color-primary);
     padding: 2rem 6rem;
-    box-shadow: 5px 0px 10px 1px var(--color-light-secondary);
+    box-shadow: 5px 0px 10px 1px var(--color-shadows);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,13 +47,13 @@ header{
     z-index: 10;
 }
 h1, h2, h3, h4, h5, h6{
-    color: var(--color-dark-primary);
+    color: var(--color-secondary);
 }
 .logoBox__svg{
     vertical-align: bottom;
 }
 .logoBox__svg path{
-    fill: var(--color-dark-primary);
+    fill: var(--color-secondary);
 }
 .toggle{
     display: block;
@@ -60,7 +61,7 @@ h1, h2, h3, h4, h5, h6{
     height: 3.4rem;
     border-radius: 5rem;
     position: relative;
-    background-color: var(--color-light-tertiary);
+    background-color: var(--color-inactive);
     cursor: pointer;
 }
 .toggle .toggle__checkbox{
@@ -74,7 +75,7 @@ h1, h2, h3, h4, h5, h6{
     left: 8%;
     transform: translate(-8%, -50%);
     border-radius: 50%;
-    background: var(--color-light-primary);
+    background: var(--color-primary);
     transition: all .5s ease-in-out;
 }
 .toggle input:checked + .toggle__button{
@@ -89,12 +90,15 @@ main{
 }
 main aside{
     width: 5rem;
-    height: 80vh;
+    height: 100vh;
     padding: 2rem 1rem;
-    box-shadow: 0px 2px 4px 1px var(--color-light-secondary);
+    box-shadow: 0px 0px 3px 4px var(--color-shadows);
     position: fixed;
+    top: 0;
     left: 0;
-    top: 11%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
 }
 main > .container{
     width: 100%;
@@ -105,7 +109,8 @@ main section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-light-primary);
+    background-color: var(--color-primary);
+    margin-left: 5rem;
 }
 main section h2{
     font-size: 3rem;
@@ -128,7 +133,7 @@ main aside nav li a svg{
     width: 2rem;
     height: 2rem;
 }
-li:nth-child(1) a svg{
+/* li:nth-child(1) a svg{
     fill: #e81d1d;
 }
 li:nth-child(2) a svg{
@@ -139,9 +144,9 @@ li:nth-child(3) a svg{
 }
 li:nth-child(4) a svg{
     fill: #2b1de8;
-}
+} */
 li.active a svg {
-    fill: var(--color-light-tertiary);
+    fill: var(--color-inactive);
 }
 main section div.section-default{
     width: 80%;
@@ -151,7 +156,12 @@ main section.skills .skills__main,
 main section.contact .contact__main{
     line-height: 2.2;
 }
-main section div h1,
+main section div h1{
+    font-size: 5rem;
+}
+main section.hero .hero__main p span{
+    border-bottom: 1px solid var(--color-secondary);
+}
 main section div h2{
     font-weight: 700;
     font-size: 3rem;
@@ -164,8 +174,8 @@ main section div h2{
     width: 5rem;
     height: 5rem;
     padding: .5rem 0;
-    box-shadow: 0px 0px 7px var(--color-light-secondary);
-    border: 1px solid var(--color-light-secondary);
+    box-shadow: 0px 0px 7px var(--color-shadows);
+    border: 1px solid var(--color-shadows);
     cursor: pointer;
 }
 .contact .contact__main p{
@@ -180,7 +190,7 @@ main section div h2{
     width: 4rem;
     height: 4rem;
     vertical-align: bottom;
-    fill: var(--color-dark-primary);
+    fill: var(--color-secondary);
 }
 .skills__main--div svg:not(:last-child),
 .contact .contact__main .social a:not(:last-child){
@@ -189,8 +199,8 @@ main section div h2{
 footer{
     width: 100%;
     padding: 2rem 0;
-    background: var(--color-light-primary);
-    box-shadow: -5px 0px 10px 1px var(--color-light-secondary);
+    background: var(--color-primary);
+    box-shadow: -5px 0px 10px 1px var(--color-shadows);
     position: fixed;
     bottom: 0;
     text-align: center;
