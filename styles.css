@@ -1,15 +1,15 @@
 :root{
     --color-primary: #FFFFFF;
     --color-secondary: #282828;
-    --color-tertiary: #83C4EE;
-    --color-quaternary: #F84D81;
+    --color-tertiary: #F84D81;
     --color-border: #d8d8d8;
     --header-space: 8rem;
+    --alpha-primary: 30%;
 }
 [data-theme="dark"]{
     --color-primary: #202020;
     --color-secondary: #f1f1f1;
-    --color-quaternary: #F84D81;
+    --color-tertiary: #F84D81;
     --color-border: #282828;
 }
 *,
@@ -46,7 +46,7 @@ svg{
     cursor: pointer;
     margin: 0 1rem;
     border-radius: .4rem;
-    transform: translate .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 .btn span{
     margin-left: .5rem;
@@ -57,10 +57,10 @@ a{
     text-decoration: none;
 }
 a[href] svg:hover{
-    fill: var(--color-quaternary);
+    fill: var(--color-tertiary);
 }
 [href]:hover{
-    color: var(--color-quaternary);
+    color: var(--color-tertiary);
 }
 a.btn[href]:hover{
     color: var(--color-primary);
@@ -106,6 +106,7 @@ main,
     padding: 2rem 4rem;
     height: 8rem;
     z-index: 10;
+    box-shadow: -1px 5px 6px -5px rgba(119, 119, 119, .3);
 }
 a.logoBox{
     display: block;
@@ -132,7 +133,7 @@ a.logoBox{
 }
 #header nav ul li a:hover,
 #header nav ul li.active a{
-    color: var(--color-quaternary);
+    color: var(--color-tertiary);
 }
 #header nav ul li * svg{ 
     width: 2rem;
@@ -154,7 +155,7 @@ a.logoBox{
     vertical-align: text-top;
 }
 .hero .hero__main h1{
-    color: var(--color-quaternary);
+    color: var(--color-tertiary);
     font-size: 5rem;
 }
 .hero .hero__main p{
@@ -234,7 +235,7 @@ a.logoBox{
     text-align: center;
 }
 .about__main p span{
-    border-bottom: 1px solid var(--color-quaternary);
+    border-bottom: 1px solid var(--color-tertiary);
 }
 .contact__main p{
     padding: 1rem 0;
