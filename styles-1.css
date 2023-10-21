@@ -143,7 +143,6 @@ a.logoBox{
 .hero .hero__main{
     text-align: center;
 }
-#home .hero__main,
 .projects .projects__main{
     margin-top: var(--header-space);
 }
@@ -296,5 +295,8 @@ footer{
 @media only screen and (max-width: 380px){
     section {
         min-height: calc(100vh - var(--header-space));
+    }
+    #home .hero__main{
+        margin-top: var(--header-space);
     }
 }
