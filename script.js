@@ -2,25 +2,33 @@ const header = document.getElementById("header");
 const sections = document.querySelectorAll("section");
 const navItems = document.querySelectorAll("nav ul li");
 
-const removeActive = () => {
+const toggleActive = (activeLink) => {
+    //get attribute from section then find it in nav items
     for (let i = 0; i < navItems.length; i++) {
         navItems[i].classList.remove("active");
+
+        const id = navItems[i].getAttribute("title").toLowerCase();
+
+        if (id === activeLink) {
+            navItems[i].classList.add("active");
+        }
     }
 };
 
-const toggleActive = (index) => {
-    removeActive();
-    navItems[index].classList.add("active");
-};
-
 window.onscroll = () => {
-    sections.forEach((e, index) => {
-        const coords = e.getBoundingClientRect();
-        if (coords.y === 0 || coords.y < 350) {
-            toggleActive(index);
+    let activeLink = "";
+    sections.forEach((e) => {
+        const sectionTop = e.offsetTop;
+        const sectionHeight = e.clientHeight;
+
+        if (window.pageYOffset >= sectionTop - sectionHeight / 5) {
+            activeLink = e.getAttribute("id");
         }
     });
+
+    toggleActive(activeLink);
 };
+
 // ---------------------------------
 const toggleInput = document.getElementById("toggle-input");
 
