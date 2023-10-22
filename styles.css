@@ -284,7 +284,7 @@ footer{
         flex-direction: row-reverse;
     }
     section{
-        min-height: calc(80vh - var(--header-space));
+        min-height: calc(92vh - var(--header-space));
     }
     .skills__main--div{
         width: 100%;
