@@ -189,11 +189,11 @@ a.logoBox{
     width: 2.5rem;
     height: 2.5rem;
 }
-.project__header .links a:last-child{
+/* .project__header .links a:last-child{
     font-size: 2.5rem;
     line-height: 1;
     margin-left: .5rem;
-}
+} */
 .project__image{
     width: 40rem;
 }
